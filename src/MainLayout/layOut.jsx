@@ -12,7 +12,7 @@ const layOut = createBrowserRouter([
             {
                 path:'/',
                 element:<Home></Home>,
-                loader: () => fetch('http://localhost:3000/product'),
+                loader: () => fetch('https://admit-dashboard-server-kjp82kj0d-rayhan-al-mims-projects.vercel.app/product'),
             },
             {
                 path:'/add',
@@ -21,7 +21,7 @@ const layOut = createBrowserRouter([
             {
                 path:'/update/:id',
                 element:<UpdateProduct></UpdateProduct>,
-                loader: ({params}) => fetch(`http://localhost:3000/product/${params.id}`)
+                loader: ({params}) => fetch(`https://admit-dashboard-server-kjp82kj0d-rayhan-al-mims-projects.vercel.app/product/${params.id}`)
             }
         ]
     }

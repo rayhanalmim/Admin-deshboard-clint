@@ -21,7 +21,7 @@ const Home = () => {
         }).then((result) => {
             if (result.isConfirmed) {
 
-                fetch(`http://localhost:3000/product/${id}`, {
+                fetch(`https://admit-dashboard-server-kjp82kj0d-rayhan-al-mims-projects.vercel.app/product/${id}`, {
                     method: 'DELETE'
                 })
                     .then(res => res.json())

@@ -16,7 +16,7 @@ const AddItem = () => {
         const data = { productName, category, company, price, photoUrl, visitor, productDetails };
 
         console.log(data)
-        fetch('http://localhost:3000/product', {
+        fetch('https://admit-dashboard-server-kjp82kj0d-rayhan-al-mims-projects.vercel.app/product', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json',
